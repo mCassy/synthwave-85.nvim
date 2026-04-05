@@ -276,13 +276,13 @@ function M.get()
     NoiceCmdlineIcon = { fg = p.cyan },
     NoiceCmdlineIconSearch = { fg = p.yellow },
     NoiceCmdlinePopup = { fg = p.fg, bg = bg_float },
-    NoiceCmdlinePopupBorder = { fg = p.border, bg = bg_float },
+    NoiceCmdlinePopupBorder = { fg = p.border },
     NoiceCmdlinePopupTitle = { fg = p.pink },
     NoiceConfirm = { fg = p.fg, bg = bg_float },
-    NoiceConfirmBorder = { fg = p.border, bg = bg_float },
+    NoiceConfirmBorder = { fg = p.border },
     NoiceMini = { fg = p.fg, bg = bg },
     NoicePopup = { fg = p.fg, bg = bg_float },
-    NoicePopupBorder = { fg = p.border, bg = bg_float },
+    NoicePopupBorder = { fg = p.border },
     NoiceScrollbar = { bg = p.bg_popup },
     NoiceScrollbarThumb = { bg = p.fg_dimmed },
 
@@ -387,9 +387,9 @@ function M.get()
     BufferLineIndicatorSelected = { fg = p.pink },
     BufferLineFill = { bg = p.bg_darker },
 
-    -- Lualine (when not using theme)
-    lualine_b_normal = { fg = p.fg_muted, bg = p.bg_visual },
-    lualine_c_normal = { fg = p.fg_muted, bg = p.bg_dark },
+    -- Lualine
+    -- Note: Lualine has a dedicated theme at lua/lualine/themes/synthwave-eightyfive.lua
+    -- Use: require("lualine").setup({ options = { theme = "synthwave-eightyfive" } })
 
     -- Snacks
     SnacksNormal = { fg = p.fg, bg = bg_float },

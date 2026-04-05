@@ -8,6 +8,10 @@
   Ported from <a href="https://github.com/robb0wen/synthwave-vscode">Synthwave '84</a> for VS Code
 </p>
 
+<p align="center">
+  <img src="assets/screenshot.png" alt="Synthwave '85 Screenshot" />
+</p>
+
 ## Features
 
 - Faithful port of the iconic Synthwave '84 VS Code theme
@@ -29,7 +33,7 @@
 
 ```lua
 {
-  "your-username/synthwave-eightyfive",
+  "mCassy/synthwave-eightyfive",
   lazy = false,
   priority = 1000,
   config = function()
@@ -45,7 +49,7 @@
 
 ```lua
 use {
-  "your-username/synthwave-eightyfive",
+  "mCassy/synthwave-eightyfive",
   config = function()
     require("synthwave-eightyfive").setup({
       -- your configuration
@@ -58,7 +62,7 @@ use {
 ### [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'your-username/synthwave-eightyfive'
+Plug 'mCassy/synthwave-eightyfive'
 
 " After plug#end()
 lua << EOF
@@ -163,17 +167,17 @@ require("synthwave-eightyfive").setup({
 
 ## Palette
 
-| Color | Hex | Usage |
-|-------|-----|-------|
-| Pink | `#ff7edb` | Variables, headings |
-| Cyan | `#36f9f6` | Functions |
-| Green | `#72f1b8` | Tags, strings (template) |
-| Yellow | `#fede5d` | Keywords, operators |
-| Orange | `#f97e72` | Constants, numbers |
-| Orange Bright | `#ff8b39` | Strings |
-| Red | `#fe4450` | Types, errors |
-| Purple | `#b893ce` | Git changes |
-| Comment | `#848bbd` | Comments |
+| Color         | Hex       | Usage                    |
+| ------------- | --------- | ------------------------ |
+| Pink          | `#ff7edb` | Variables, headings      |
+| Cyan          | `#36f9f6` | Functions                |
+| Green         | `#72f1b8` | Tags, strings (template) |
+| Yellow        | `#fede5d` | Keywords, operators      |
+| Orange        | `#f97e72` | Constants, numbers       |
+| Orange Bright | `#ff8b39` | Strings                  |
+| Red           | `#fe4450` | Types, errors            |
+| Purple        | `#b893ce` | Git changes              |
+| Comment       | `#848bbd` | Comments                 |
 
 ## Credits
 
