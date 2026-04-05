@@ -33,14 +33,14 @@
 
 ```lua
 {
-  "mCassy/synthwave-eightyfive",
+  "mCassy/synthwave-85.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    require("synthwave-eightyfive").setup({
+    require("synthwave-85.nvim").setup({
       -- your configuration
     })
-    vim.cmd.colorscheme("synthwave-eightyfive")
+    vim.cmd.colorscheme("synthwave-85.nvim")
   end,
 }
 ```
@@ -49,12 +49,12 @@
 
 ```lua
 use {
-  "mCassy/synthwave-eightyfive",
+  "mCassy/synthwave-85.nvim",
   config = function()
-    require("synthwave-eightyfive").setup({
+    require("synthwave-85.nvim").setup({
       -- your configuration
     })
-    vim.cmd.colorscheme("synthwave-eightyfive")
+    vim.cmd.colorscheme("synthwave-85.nvim")
   end,
 }
 ```
@@ -62,13 +62,13 @@ use {
 ### [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'mCassy/synthwave-eightyfive'
+Plug 'mCassy/synthwave-85.nvim'
 
 " After plug#end()
 lua << EOF
-require("synthwave-eightyfive").setup({})
+require("synthwave-85.nvim").setup({})
 EOF
-colorscheme synthwave-eightyfive
+colorscheme synthwave-85.nvim
 ```
 
 ## Configuration
@@ -76,7 +76,7 @@ colorscheme synthwave-eightyfive
 ### Default Options
 
 ```lua
-require("synthwave-eightyfive").setup({
+require("synthwave-85.nvim").setup({
   transparent = false,      -- Enable transparent background
   terminal_colors = true,   -- Set terminal colors (0-15)
   italics = {
@@ -96,7 +96,7 @@ require("synthwave-eightyfive").setup({
 Enable transparent backgrounds for use with terminal transparency or background images:
 
 ```lua
-require("synthwave-eightyfive").setup({
+require("synthwave-85.nvim").setup({
   transparent = true,
 })
 ```
@@ -107,12 +107,12 @@ You can control italics globally or for specific syntax categories:
 
 ```lua
 -- Disable all italics
-require("synthwave-eightyfive").setup({
+require("synthwave-85.nvim").setup({
   italics = false,
 })
 
 -- Or fine-tune specific categories
-require("synthwave-eightyfive").setup({
+require("synthwave-85.nvim").setup({
   italics = {
     comments = true,
     keywords = true,
@@ -129,7 +129,7 @@ require("synthwave-eightyfive").setup({
 Override any highlight group with your own settings:
 
 ```lua
-require("synthwave-eightyfive").setup({
+require("synthwave-85.nvim").setup({
   overrides = {
     -- Make comments bold
     Comment = { bold = true },
