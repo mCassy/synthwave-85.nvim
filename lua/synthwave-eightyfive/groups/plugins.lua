@@ -445,6 +445,10 @@ function M.get()
     BufferLineGroupLabel = { fg = p.bg, bg = p.pink, bold = true },
     BufferLineOffsetSeparator = { fg = p.border, bg = p.bg },
     BufferLineTruncMarker = { fg = p.comment, bg = p.bg_darker },
+    -- DevIcon backgrounds (bufferline creates these dynamically for file icons)
+    BufferLineDevIconDefault = { bg = p.bg_dark },
+    BufferLineDevIconDefaultSelected = { bg = p.bg },
+    BufferLineDevIconDefaultInactive = { bg = p.bg_dark },
 
     -- Lualine
     -- Note: Lualine has a dedicated theme at lua/lualine/themes/synthwave-eightyfive.lua
