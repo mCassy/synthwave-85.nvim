@@ -36,7 +36,7 @@ function M.get()
 
     -- Literals
     ["@string"] = { fg = p.orange_bright, italic = italic_strings ~= "" },
-    ["@string.documentation"] = { fg = p.comment, italic = true },
+    ["@string.documentation"] = { fg = p.comment, italic = italic_comments ~= "" },
     ["@string.regexp"] = { fg = p.orange },
     ["@string.escape"] = { fg = p.cyan },
     ["@string.special"] = { fg = p.cyan },
@@ -96,7 +96,7 @@ function M.get()
 
     -- Comments
     ["@comment"] = { fg = p.comment, italic = italic_comments ~= "" },
-    ["@comment.documentation"] = { fg = p.comment, italic = true },
+    ["@comment.documentation"] = { fg = p.comment, italic = italic_comments ~= "" },
     ["@comment.error"] = { fg = p.red, bg = util.blend(p.red, p.bg, 0.2) },
     ["@comment.warning"] = { fg = p.yellow, bg = util.blend(p.yellow, p.bg, 0.2) },
     ["@comment.todo"] = { fg = p.yellow, bg = p.bg_visual, bold = true },
@@ -140,7 +140,7 @@ function M.get()
     -- Tags (HTML/XML/JSX)
     ["@tag"] = { fg = p.green },
     ["@tag.builtin"] = { fg = p.green },
-    ["@tag.attribute"] = { fg = p.yellow, italic = true },
+    ["@tag.attribute"] = { fg = p.yellow, italic = italic_variables ~= "" },
     ["@tag.delimiter"] = { fg = p.cyan },
 
     -- Misc
@@ -187,7 +187,7 @@ function M.get()
     ["@attribute.phpdoc"] = { fg = p.cyan },
     ["@type.phpdoc"] = { fg = p.red },
     ["@variable.parameter.phpdoc"] = { fg = p.pink, italic = italic_parameters ~= "" },
-    ["@comment.documentation.php"] = { fg = p.comment, italic = true },
+    ["@comment.documentation.php"] = { fg = p.comment, italic = italic_comments ~= "" },
   }
 end
 

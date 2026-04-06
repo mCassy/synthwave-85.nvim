@@ -57,7 +57,7 @@ function M.get()
     SpecialChar = { fg = p.cyan },
     Tag = { fg = p.green },
     Delimiter = { fg = p.fg_dark },
-    SpecialComment = { fg = p.comment, italic = true },
+    SpecialComment = { fg = p.comment, italic = italic_comments ~= "" },
     Debug = { fg = p.orange },
 
     -- Underlined
@@ -81,7 +81,7 @@ function M.get()
     htmlTag = { fg = p.cyan },
     htmlEndTag = { fg = p.cyan },
     htmlTagName = { fg = p.green },
-    htmlArg = { fg = p.yellow, italic = true },
+    htmlArg = { fg = p.yellow, italic = italic_variables ~= "" },
     htmlSpecialChar = { fg = p.orange },
     htmlBold = { bold = true },
     htmlItalic = { italic = true },
@@ -97,7 +97,7 @@ function M.get()
     xmlTag = { fg = p.cyan },
     xmlEndTag = { fg = p.cyan },
     xmlTagName = { fg = p.green },
-    xmlAttrib = { fg = p.yellow, italic = true },
+    xmlAttrib = { fg = p.yellow, italic = italic_variables ~= "" },
 
     -- CSS
     cssClassName = { fg = p.red },
@@ -161,7 +161,7 @@ function M.get()
     markdownUrlDelimiter = { fg = p.fg_dark },
     markdownLinkDelimiter = { fg = p.fg_dark },
     markdownLinkTextDelimiter = { fg = p.fg_dark },
-    markdownUrl = { fg = p.green, italic = true },
+    markdownUrl = { fg = p.green, italic = italic_strings ~= "" },
     markdownUrlTitleDelimiter = { fg = p.yellow },
     markdownLinkText = { fg = p.yellow },
     markdownIdDeclaration = { fg = p.yellow },
@@ -217,7 +217,7 @@ function M.get()
     rustMacro = { fg = p.cyan },
     rustAttribute = { fg = p.comment },
     rustDeriveTrait = { fg = p.green },
-    rustCommentLineDoc = { fg = p.comment, italic = true },
+    rustCommentLineDoc = { fg = p.comment, italic = italic_comments ~= "" },
 
     -- Shell
     shVariable = { fg = p.pink },
