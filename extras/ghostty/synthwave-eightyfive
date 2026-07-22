@@ -1,0 +1,28 @@
+# Synthwave '85 for Ghostty
+# Ported from https://github.com/mCassy/synthwave-85.nvim
+
+background = #262335
+foreground = #ffffff
+
+cursor-color = #f97e72
+cursor-text = #262335
+
+selection-background = #3d3555
+selection-foreground = #ffffff
+
+palette = 0=#171520
+palette = 1=#fe4450
+palette = 2=#72f1b8
+palette = 3=#f3e70f
+palette = 4=#03edf9
+palette = 5=#ff7edb
+palette = 6=#03edf9
+palette = 7=#ffffff
+palette = 8=#848bbd
+palette = 9=#fe4450
+palette = 10=#72f1b8
+palette = 11=#fede5d
+palette = 12=#03edf9
+palette = 13=#ff7edb
+palette = 14=#03edf9
+palette = 15=#ffffff
