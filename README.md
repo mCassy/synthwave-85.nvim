@@ -29,6 +29,19 @@
 
 ## Installation
 
+### Built-in `vim.pack` (Neovim 0.12+)
+
+```lua
+vim.pack.add({
+  { src = "https://github.com/mCassy/synthwave-85.nvim" },
+})
+
+require("synthwave-85.nvim").setup({
+  -- your configuration
+})
+vim.cmd.colorscheme("synthwave-85.nvim")
+```
+
 ### [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ```lua
